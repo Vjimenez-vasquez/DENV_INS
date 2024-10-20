@@ -27,6 +27,7 @@ setwd("C:/Users/HP/Documents/dengue/DENV_2024")
 getwd()
 dir()
 
+# DENV-1
 d1 <- read.csv("metadata_nexstrain_denv1.tsv", header=T, sep="\t")
 d1_ns <- read.csv("denv1.nextclade.tsv", header=T, sep="\t")
 d1_ns1 <- data.frame(strain=d1_ns$seqName, clade=d1_ns$clade)
@@ -35,6 +36,7 @@ dim(d1_f)
 dim(d1)
 write.table(d1_f, "metadata_nexstrain_denv1_ns.tsv", col.names=T, row.names=F, sep="\t", quot=F)
 
+# DENV-2
 d2 <- read.csv("metadata_nexstrain_denv2.tsv", header=T, sep="\t")
 d2_ns <- read.csv("denv2.nextclade.tsv", header=T, sep="\t")
 d2_ns1 <- data.frame(strain=d2_ns$seqName, clade=d2_ns$clade)
@@ -43,6 +45,7 @@ dim(d2_f)
 dim(d2)
 write.table(d2_f, "metadata_nexstrain_denv2_ns.tsv", col.names=T, row.names=F, sep="\t", quot=F)
 
+# DENV-3
 d3 <- read.csv("metadata_nexstrain_denv3.tsv", header=T, sep="\t")
 d3_ns <- read.csv("denv3.nextclade.tsv", header=T, sep="\t")
 d3_ns1 <- data.frame(strain=d3_ns$seqName, clade=d3_ns$clade)
