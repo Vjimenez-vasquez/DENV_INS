@@ -16,7 +16,7 @@ do
 seq=$(ls $s | sed 's/output_//g' | sed 's/.5.fasta//g')
 nextclade run --input-dataset ${seq}/ --output-all ${seq}.nextclade $s --output-basename ${seq} --output-tsv ${seq}.nextclade/${seq}.nextclade.tsv --output-fasta ${seq}.nextclade/${seq}.nextclade.fasta
 mv ${seq}.nextclade/${seq}.nextclade.tsv ${seq}.nextclade/${seq}.nextclade.fasta .
-echo ${seq} as been done 
+echo ${seq} has been done 
 done 
 ls ;
 ```
