@@ -55,9 +55,14 @@ dim(d3)
 write.table(d3_f, "metadata_nexstrain_denv3_ns.tsv", col.names=T, row.names=F, sep="\t", quot=F)
 ```
 
-
 ## nexststrain
 ```r
+
+# 1: crear las carpetas "ns_denv1", "ns_denv2", "ns_denv3"
+# 2: dentro de cada carpeta colocar los archivos "input" en cada caso (ejemplos: "auspice_config.json", "lat_longs.tsv", "denv3.gb", "raw_tree_denv3.nwk", "metadata_nextstrain_denv3_ns.tsv", "output_denv3.5.fasta")
+# 3: fuera de las carpetas, también colocar los archivos "fasta" ("output_denv3.5.fasta", "output_denv2.5.fasta", "output_denv3.5.fasta")
+
+# 4: 
 conda activate nextstrain ;
 for s in *.5.fasta
 do
